@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/fab_margin"
+    android:layout_marginLeft="@dimen/fab_margin"
+    android:layout_marginBottom="@dimen/fab_margin"
+    android:layout_marginRight="@dimen/fab_margin"
+    tools:context="com.hostandguest.sim.hostandguest.SignIn.homeActivity.AddAnnonce2Activity">
+
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:text="Ou se situe votre logement ?" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pays" />
+
+    <EditText
+        android:id="@+id/edtCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:inputType="textPersonName"
+        android:hint="Tunisie" />
+
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rue" />
+
+    <EditText
+        android:id="@+id/edtStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:inputType="textPersonName"
+        android:maxLines="2"
+        android:hint="ex: Avenue Habib-kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" />
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_weight="0.25"
+            android:paddingRight="2dp"
+            android:text="Code postal" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="0.75"
+            android:paddingLeft="2dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:text="Ville" />
+    </TableRow>
+    <TableRow
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/edtCodePostal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:inputType="textPersonName"
+            android:hint="ex:7501"
+            android:paddingRight="2dp"
+            android:layout_weight="0.25"/>
+
+        <EditText
+            android:paddingLeft="2dp"
+            android:id="@+id/edtVille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:inputType="textPersonName"
+            android:hint="Tunis"
+            android:layout_weight="0.75"/>
+    </TableRow>
+</TableLayout>
+
+
+
+
+
+
+</LinearLayout>

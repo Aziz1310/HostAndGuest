@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hostandguest.sim.hostandguest.SignIn.homeActivity.AddAnnonce5Activity">
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="Duree du sejour" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView21"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="72dp"
+        android:text="Sejour minimum(nuits)" />
+
+    <EditText
+        android:id="@+id/sejour_minim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23"
+        android:layout_below="@+id/textView23"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sejour_minim"
+        android:layout_alignStart="@+id/sejour_minim"
+        android:layout_centerVertical="true"
+        android:text="Sejour maximum (nuits)" />
+
+    <EditText
+        android:id="@+id/sejour_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_below="@+id/textView24"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Aucun"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sejour_max"
+        android:layout_alignStart="@+id/sejour_max"
+        android:layout_below="@+id/sejour_max"
+        android:layout_marginTop="26dp"
+        android:text="Prix par nuit" />
+
+    <EditText
+        android:id="@+id/prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView25"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_below="@+id/textView25"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Dt"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/publier_annonce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prix"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Publier l'annonce" />
+
+</RelativeLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_login"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/blackTrans"/>
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="24dp"
+        android:paddingTop="20dp"
+        android:weightSum="1">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="143dp"
+                    android:layout_height="108dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:src="@drawable/profil_image"
+                    android:id="@+id/ImageProfileUser" />
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnChooseImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_plus_48"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="67dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/ImageProfileUser"
+                    android:layout_alignEnd="@+id/ImageProfileUser"
+                    android:layout_marginEnd="13dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--  FirstName Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="8dp">
+                <EditText android:id="@+id/EdtFirstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Firstname"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:drawableTint="#FF4081"
+                    android:textAppearance="@style/EditTextHintBlack"
+
+                    android:inputType="text"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="8dp">
+                <EditText android:id="@+id/EdtLastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/white"
+                    android:hint="Lastname"
+                    android:textAppearance="@style/EditTextHintBlack"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:drawableTint="#FF4081"
+                    android:inputType="text"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+            <!--  Email Label -->
+
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="8dp">
+            <EditText android:id="@+id/EdtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:backgroundTint="@color/colorPrimary"
+                android:inputType="textEmailAddress"
+                android:textAppearance="@style/EditTextHintBlack"
+                android:textColor="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--  Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/white"
+            android:forceHasOverlappingRendering="true">
+
+            <EditText android:id="@+id/EdtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/white"
+                android:textColorHighlight="@color/white"
+                android:inputType="textPassword"
+                android:textAppearance="@style/EditTextHintBlack"
+                android:textColor="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+        <!--  Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/white"
+            android:forceHasOverlappingRendering="true">
+            <EditText android:id="@+id/EdtConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawableTint="#FF4081"
+                android:textAppearance="@style/EditTextHintBlack"
+                android:inputType="textPassword"
+                android:textColor="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:paddingRight="10dp"
+                android:text="i am"
+
+                android:textColor="@color/white" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/RgType"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/RbTeacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:buttonTint="@color/colorPrimary"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:checked="true"
+                        android:text="Host"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/RbParent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:buttonTint="@color/colorPrimary"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Guest"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:text="Sign up"
+            android:background="@drawable/shape"
+            android:layout_weight="0.39" />
+
+
+    </LinearLayout>
+</ScrollView>
+    </RelativeLayout>

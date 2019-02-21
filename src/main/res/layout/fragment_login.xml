@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_login"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/blackTrans"/>
+
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="100dp"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="0.16">
+
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.55"
+                android:src="@android:drawable/btn_star" />
+        </RelativeLayout>
+
+        <!--  Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="8dp">
+
+            <EditText android:id="@+id/EdtEmailUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:backgroundTint="@color/colorPrimary"
+                android:inputType="textEmailAddress"
+                android:textAppearance="@style/EditTextHintBlack"
+                android:textColor="@color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--  Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/white"
+            android:forceHasOverlappingRendering="true">
+            <EditText android:id="@+id/EdtPasswordUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mot De Passe"
+                android:backgroundTint="@color/colorPrimary"
+                android:inputType="textPassword"
+                android:textAppearance="@style/EditTextHintBlack"
+                android:textColor="@color/white"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnlogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:text="Sign in"
+            android:background="@drawable/shape"
+            android:layout_weight="0.39" />
+
+
+    </LinearLayout>
+</ScrollView>
+    </RelativeLayout>
